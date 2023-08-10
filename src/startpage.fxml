@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="500.0" maxWidth="650.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="650.0" styleClass="backgroundColor" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="startpagecontroller">
+   <children>
+      <AnchorPane prefHeight="65.0" prefWidth="650.0" styleClass="backgroundColor" stylesheets="@style.css">
+         <children>
+            <Label fx:id="startlbl" alignment="CENTER" prefHeight="65.0" prefWidth="651.0" styleClass="heading" stylesheets="@style.css" text="   BUS BOOKING " textFill="WHITE">
+               <font>
+                  <Font name="Calisto MT Bold" size="35.0" />
+               </font>
+            </Label>
+            <Circle fill="#ffffff00" layoutX="43.0" layoutY="33.0" radius="25.0" stroke="#fdfff9" strokeType="INSIDE" />
+            <ImageView blendMode="COLOR_BURN" fitHeight="58.0" fitWidth="58.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.02" contrast="0.67" hue="0.26" saturation="-0.45" />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="logoutimg" blendMode="LIGHTEN" fitHeight="31.0" fitWidth="99.0" layoutX="552.0" layoutY="-1.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true" styleClass="logout">
+               <image>
+                  <Image url="@logout.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="105.0" layoutY="330.0" onMouseClicked="#bookingvbox" prefHeight="131.0" prefWidth="128.0" stylesheets="@styles.css">
+         <children>
+            <Label alignment="CENTER" layoutX="2.0" layoutY="94.0" prefHeight="30.0" prefWidth="128.0" style="-fx-label-margin: 100; -fx-background-color: #3734348f;" styleClass="img" text="Booking" textFill="#f5f8e5">
+               <font>
+                  <Font name="Algerian" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bookingimg" blendMode="MULTIPLY" fitHeight="75.0" fitWidth="73.0" layoutX="28.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style="-fx-scale-x: 1;">
+               <image>
+                  <Image url="@booking.png" />
+               </image>
+            </ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="menuBox" />
+            <String fx:value="img" />
+         </styleClass>
+      </AnchorPane>
+      <AnchorPane layoutX="262.0" layoutY="330.0" onMouseClicked="#cancellationscene" prefHeight="131.0" prefWidth="128.0" styleClass="menuBox" stylesheets="@styles.css">
+         <children>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="94.0" prefHeight="30.0" prefWidth="128.0" style="-fx-label-margin: 100; -fx-background-color: #3734348f;" styleClass="img" stylesheets="@styles.css" text="Cancellation" textFill="#f5f8e5">
+               <font>
+                  <Font name="Algerian" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="canimg" blendMode="MULTIPLY" fitHeight="75.0" fitWidth="73.0" layoutX="28.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style="-fx-scale-x: 1;" styleClass="img">
+               <image>
+                  <Image url="@cancellation.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="413.0" layoutY="329.0" onMouseClicked="#helpscene" prefHeight="131.0" prefWidth="128.0" stylesheets="@styles.css">
+         <styleClass>
+            <String fx:value="img" />
+            <String fx:value="menuBox" />
+         </styleClass>
+         <children>
+            <Label alignment="CENTER" layoutX="2.0" layoutY="94.0" prefHeight="30.0" prefWidth="128.0" style="-fx-label-margin: 100; -fx-background-color: #3734348f;" styleClass="img" stylesheets="@styles.css" text="HELP" textFill="#f5f8e5">
+               <font>
+                  <Font name="Algerian" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="helpimg" blendMode="MULTIPLY" fitHeight="73.0" fitWidth="71.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style="-fx-scale-x: 1;" styleClass="img">
+               <image>
+                  <Image url="@help.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView blendMode="COLOR_BURN" fitHeight="131.0" fitWidth="130.0" layoutX="261.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.02" contrast="0.67" hue="0.26" saturation="-0.45" />
+         </effect>
+      </ImageView>
+      <Circle fill="#e0dede00" layoutX="325.0" layoutY="150.0" radius="64.0" stroke="#574c4c" strokeType="INSIDE" />
+      <Label fx:id="startlbl" layoutX="237.0" layoutY="236.0" style="-fx-background-color: #3734348f;" text="Welcome XYZ" textAlignment="CENTER">
+         <font>
+            <Font name="Calisto MT Bold" size="25.0" />
+         </font>
+         <padding>
+            <Insets bottom="4.0" left="6.0" right="6.0" top="4.0" />
+         </padding>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@style.css" />
+      <URL value="@styles.css" />
+   </stylesheets>
+</AnchorPane>

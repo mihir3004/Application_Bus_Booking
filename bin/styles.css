@@ -1,0 +1,162 @@
+.borders {
+    
+    
+    -fx-border-radius: 10px;
+    -fx-border-color : linear-gradient(to left bottom,#871196,#53d2ce);
+    -fx-border-width : 2;
+    /* -fx-background-color: rgb(0, 221, 255); */
+    -fx-background-color:#dad4d4;;
+    -fx-background-radius:10px;
+    -fx-border-style : solid;
+    /* /-fx-Alignment:Pos.Center; */
+}
+.borders:hover {
+    
+    
+    -fx-border-radius: 10px;
+    -fx-border-color : Blue;
+    -fx-border-width : 1;
+    /* -fx-background-color: rgb(0, 221, 255); */
+    -fx-background-color:linear-gradient(to right bottom,#d37ddf,#a0e1de);
+    -fx-background-radius:10px;
+    -fx-border-style : solid;
+    -fx-cursor : hand;
+    -fx-effect:dropshadow(three-pass-box,black,20,0,0,0);
+    /* /-fx-Alignment:Pos.Center; */
+}
+.label1
+{
+    -fx-font-family:Serif;
+    -fx-font-size:16;
+    -fx-text-fill: Black;
+}
+.label2
+{
+    -fx-font-family:Serif;
+    -fx-font-size:20;
+    -fx-font-weight:BOLD;
+    -fx-text-fill: rgb(203, 51, 51);
+}
+.label3{
+    -fx-font-family:Serif;
+    -fx-font-size:16;
+    -fx-text-fill: Black;
+}
+.label4{
+    -fx-font-family:Serif;
+    -fx-font-size:16;
+    -fx-text-fill: Red;
+    -fx-font-weight:BOLD;
+}
+.btn{
+    -fx-border-color:red;
+    -fx-background-color:white;
+    -fx-border-radius:5px;
+    -fx-background-RADIUS:5px;
+}
+.btn:hover{
+    -fx-background-color:red;
+    -fx-text-fill:white;
+    -fx-cursor : hand;
+
+}
+.Lbtn{
+    -fx-border-color:rgb(159, 159, 162);
+    -fx-background-color:white;
+    -fx-border-radius:5px;
+    -fx-background-RADIUS:5px;
+}
+.Lbtn:hover{
+    -fx-background-color:Blue;
+    -fx-text-fill:white;
+    -fx-cursor : hand;
+
+}
+.reglabel{
+    -fx-text-fill:Blue;
+    -fx-cursor : hand;
+}
+.reglabel:hover{
+    -fx-text-fill:Red;
+    -fx-cursor : hand;
+}
+.img:hover{
+    -fx-text-fill:black;
+    -fx-cursor : hand;
+}
+.backgroundColor{
+    -fx-background-color: #dad4d4;
+}
+.backgroundBox{
+    -fx-background-color:linear-gradient(to left bottom,#53d2ce,#871196);
+    -fx-border-radius:10px;
+    -fx-background-radius:10px;
+    -fx-border-color:#3734348f;
+    -fx-border-width:1.5px 5px 5px 1.5px;
+}
+.lblField{
+    /* -fx-font-family:Lucida Fax; */
+    -fx-font-size:16px;
+    -fx-font-weight:bold;
+    -fx-background-radius:50px;
+}
+.txtField{
+    -fx-font-size:14px;
+    -fx-background-radius:50px;
+}
+.btnLogin:hover{
+    -fx-background-radius:50px;
+    -fx-background-color:linear-gradient(to left bottom,#53d2ce,#871196);
+    -fx-text-fill:#28062d;
+    -fx-font-weight:bold;
+    -fx-font-family:Cambria;
+    -fx-font-size:14px;
+    /* -fx-border-color:white;
+    -fx-background-color:transperent; */
+
+}
+.btnLogin{
+    -fx-background-radius:50px;
+    -fx-background-color: transperent;
+    -fx-text-fill:#dad4d4;
+    -fx-font-weight:bold;
+    -fx-border-radius:50px;
+    -fx-border-color:#ece8e8;
+}
+.lblLink{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5px;
+    -fx-font-weight:bold;
+}
+.heading{
+    -fx-background-color:linear-gradient(to left bottom,#871196,#53d2ce);
+}
+.menuBox{
+    -fx-background-radius:6px;
+    -fx-background-color:transperent;
+    -fx-border-style:solid;
+    -fx-border-radius:6px;
+    -fx-border-color:#871196;
+    /* -fx-text-fill:#28062d; */
+    /* -fx-font-weight:bold; */
+} 
+.menuBox:hover{
+    /* -fx-background-color:#aadfee; */
+    -fx-background-color:linear-gradient(to right bottom,#d37ddf,#a0e1de);
+    -fx-background-radius:6px;
+    -fx-border-style:solid;
+    -fx-border-radius:6px;
+    -fx-border-color:#871196;
+}
+.logout:hover{
+    -fx-blend-mode:OVERLAY;
+}
+.backbtn:hover{
+    -fx-blend-mode: RED;
+}
+.cancel{
+    -fx-font-family:Serif,Calisto MT;
+    -fx-font-size:13;
+    /* -fx-text-fill: Red; */
+    /* -fx-font-weight:BOLD; */
+}

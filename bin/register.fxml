@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="650.0" styleClass="backgroundColor" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <AnchorPane layoutX="141.0" layoutY="35.0" prefHeight="430.0" prefWidth="368.0" styleClass="backgroundBox" stylesheets="@style.css">
+         <children>
+            <Label fx:id="loginswitch" layoutX="218.0" layoutY="370.0" onMouseClicked="#loginscene" styleClass="lblLink" stylesheets="@style.css" text="Login" textFill="#300ce4">
+               <font>
+                  <Font name="Lucida Fax Regular" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="4.0" right="4.0" top="2.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="rusername" blendMode="OVERLAY" layoutX="59.0" layoutY="91.0" prefHeight="26.0" prefWidth="249.0" promptText="Username" styleClass="txtField" stylesheets="@style.css" />
+            <PasswordField fx:id="rpassword" blendMode="OVERLAY" layoutX="59.0" layoutY="135.0" prefHeight="26.0" prefWidth="249.0" promptText="Password" styleClass="txtField" stylesheets="@style.css" />
+            <PasswordField fx:id="rcpassword" blendMode="OVERLAY" layoutX="59.0" layoutY="179.0" prefHeight="26.0" prefWidth="249.0" promptText="Confirm Password" styleClass="txtField" stylesheets="@style.css" />
+            <TextField fx:id="rcontactnumber" blendMode="OVERLAY" layoutX="59.0" layoutY="223.0" prefHeight="26.0" prefWidth="249.0" promptText="Contact number" styleClass="txtField" stylesheets="@style.css" />
+            <TextField fx:id="remail" blendMode="OVERLAY" layoutX="59.0" layoutY="267.0" prefHeight="26.0" prefWidth="249.0" promptText="Email id" styleClass="txtField" stylesheets="@style.css" />
+            <Button layoutX="59.0" layoutY="332.0" mnemonicParsing="false" onAction="#registerbtn" prefHeight="26.0" prefWidth="249.0" styleClass="btnLogin" stylesheets="@style.css" text="Register" textFill="#2201f7">
+               <font>
+                  <Font name="Cambria" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="error1" alignment="CENTER" layoutX="56.0" layoutY="308.0" prefHeight="18.0" prefWidth="255.0" textFill="#fd5353">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="102.0" layoutY="371.0" text="Already Registered ?" textFill="WHITE" />
+            <Label layoutX="76.0" layoutY="31.0" prefHeight="30.0" prefWidth="215.0" style="-fx-font-weight: bold;" text="REGISTER HERE " textFill="WHITE">
+               <font>
+                  <Font name="Lucida Fax Regular" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@style.css" />
+      <URL value="@styles.css" />
+   </stylesheets>
+</AnchorPane>

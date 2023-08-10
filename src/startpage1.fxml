@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="500.0" maxWidth="650.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="650.0" style="-fx-background-color: #c6c7d8;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="startpagecontroller">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@OIP.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="startlbl" alignment="CENTER" layoutX="110.0" layoutY="20.0" prefHeight="106.0" prefWidth="435.0" text="BUS BOOKING ">
+         <font>
+            <Font name="Calisto MT Bold" size="39.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="helpimg" fitHeight="92.0" fitWidth="102.0" layoutX="471.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true" style="-fx-scale-x: 1;" styleClass="img">
+         <image>
+            <Image url="@help.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bookingimg" fitHeight="92.0" fitWidth="99.0" layoutX="118.0" layoutY="329.0" onMouseClicked="#bookingvbox" pickOnBounds="true" preserveRatio="true" style="-fx-scale-x: 1;" styleClass="img">
+         <image>
+            <Image url="@booking.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="canimg" fitHeight="92.0" fitWidth="102.0" layoutX="295.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true" style="-fx-scale-x: 1;" styleClass="img">
+         <image>
+            <Image url="@cancellation.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="logoutimg" layoutX="557.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" onMouseClicked="#logout" styleClass="btn" stylesheets="@styles.css" text="Logout" textFill="#ed140c">
+         <font>
+            <Font name="Lucida Fax Regular" size="16.0" />
+         </font></Button>
+      <AnchorPane layoutX="115.0" layoutY="330.0" onMouseClicked="#bookingvbox" prefHeight="118.0" prefWidth="92.0" styleClass="img" stylesheets="@styles.css">
+         <children>
+            <Label alignment="CENTER" layoutX="3.0" layoutY="89.0" onMouseClicked="#bookingvbox" prefHeight="39.0" prefWidth="86.0" style="-fx-label-margin: 100;" styleClass="img" stylesheets="@styles.css" text="Booking">
+               <font>
+                  <Font name="Algerian" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="291.0" layoutY="330.0" onMouseClicked="#cancellationscene" prefHeight="118.0" prefWidth="98.0" styleClass="img" stylesheets="@styles.css">
+         <children>
+            <Label alignment="CENTER" layoutY="89.0" prefHeight="39.0" prefWidth="98.0" style="-fx-label-margin: 100;" styleClass="img" stylesheets="@styles.css" text="Cancellation">
+               <font>
+                  <Font name="Algerian" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="468.0" layoutY="325.0" onMouseClicked="#helpscene" prefHeight="118.0" prefWidth="92.0" styleClass="img" stylesheets="@styles.css">
+         <children>
+            <Label alignment="CENTER" layoutY="98.0" prefHeight="39.0" prefWidth="98.0" style="-fx-label-margin: 100;" styleClass="img" stylesheets="@styles.css" text="HELP">
+               <font>
+                  <Font name="Algerian" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

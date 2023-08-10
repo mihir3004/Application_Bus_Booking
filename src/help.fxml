@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="650.0" style="-fx-background-color: linear-gradient(to left bottom,#871196,#53d2ce);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="helpController">
+   <children>
+      <Label layoutX="142.0" layoutY="183.0" text="HelpLine No.  :">
+         <font>
+            <Font name="Calisto MT Bold" size="18.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.3193832641131027" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="142.0" layoutY="223.0" prefHeight="26.0" prefWidth="154.0" text="E-Mail ID        :">
+         <font>
+            <Font name="Calisto MT Bold" size="18.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.3193832641131027" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="281.0" layoutY="223.0" prefHeight="26.0" prefWidth="227.0" text="ahmedtosurt511@gmailcom" textFill="WHITE">
+         <font>
+            <Font name="Calisto MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="281.0" layoutY="183.0" prefHeight="26.0" prefWidth="116.0" text="9601911810" textFill="WHITE">
+         <font>
+            <Font name="Calisto MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="backbtn1" blendMode="DARKEN" fitHeight="40.0" fitWidth="50.0" layoutX="600.0" layoutY="7.0" onMouseClicked="#backbtn" onMouseEntered="#hover" onMouseExited="#hoverreverse" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="startlbl" alignment="CENTER" layoutX="73.0" prefHeight="66.0" prefWidth="522.0" styleClass="heading" stylesheets="@style.css" text="Help &amp; Support" textFill="WHITE">
+         <font>
+            <Font name="Calisto MT Bold" size="35.0" />
+         </font>
+      </Label>
+      <ImageView blendMode="COLOR_BURN" fitHeight="58.0" fitWidth="58.0" layoutX="8.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.02" contrast="0.67" hue="0.26" saturation="-0.45" />
+         </effect>
+      </ImageView>
+      <Circle fill="#ffffff00" layoutX="37.0" layoutY="33.0" radius="25.0" stroke="#fdfff9" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

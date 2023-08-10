@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="500.0" maxWidth="650.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainController">
+   <children>
+      <Label fx:id="startlbl" alignment="CENTER" prefHeight="65.0" prefWidth="651.0" styleClass="heading" stylesheets="@styles.css" text="Advance Booking" textFill="WHITE">
+         <font>
+            <Font name="Calisto MT Bold" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="backbtn1" blendMode="DARKEN" cache="true" fitHeight="46.0" fitWidth="58.0" layoutX="593.0" onMouseClicked="#scenechange" onMouseEntered="#hover" onMouseExited="#hoverreverse" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.jpg" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="COLOR_BURN" fitHeight="58.0" fitWidth="58.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.02" contrast="0.67" hue="0.26" saturation="-0.45" />
+         </effect>
+      </ImageView>
+      <Circle fill="#ffffff00" layoutX="43.0" layoutY="33.0" radius="25.0" stroke="#fdfff9" strokeType="INSIDE" />
+      <ScrollPane fx:id="scrollpane" layoutX="0" layoutY="111.0" prefHeight="387.0" prefWidth="650.0" style="-fx-background-color: #c6c7d8;" stylesheets="@styles.css" />
+      <AnchorPane layoutX="-2.0" layoutY="66.0" prefHeight="43.0" prefWidth="651.0" style="-fx-background-color: #dad4d4;">
+         <children>
+            <ComboBox fx:id="tocb" layoutX="419.0" layoutY="9.0" prefWidth="150.0" style="-fx-background-color: transperent; -fx-border-color: white; -fx-font: CALISTO MT;" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="87.0" layoutY="9.0" prefHeight="27.0" prefWidth="50.0" text="From   " textFill="#0d0d0d">
+               <font>
+                  <Font name="Calisto MT Bold" size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="fromcb" layoutX="137.0" layoutY="9.0" prefWidth="150.0" style="-fx-background-color: transperent; -fx-border-color: white;" />
+            <Label alignment="CENTER_RIGHT" layoutX="373.0" layoutY="9.0" prefHeight="27.0" prefWidth="35.0" text="To   " textFill="#0b0b0b">
+               <font>
+                  <Font name="Calisto MT Bold" size="15.0" />
+               </font>
+            </Label>
+            <Line endX="650.0" endY="-2.288818359375E-5" layoutY="45.0" />
+            <Line endX="650.0" endY="-2.288818359375E-5" layoutY="1.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

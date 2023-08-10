@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cancellationcontroller">
+   <children>
+      <HBox layoutX="-1.0" layoutY="70.0" prefHeight="42.0" prefWidth="651.0" style="-fx-background-color: Black;">
+         <children>
+            <Label alignment="CENTER" prefHeight="44.0" prefWidth="66.0" text="Sr.No." textFill="WHITE">
+               <font>
+                  <Font name="Calisto MT Bold" size="14.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="42.0" prefWidth="226.0" text="Bus Route" textFill="WHITE">
+               <font>
+                  <Font name="Calisto MT Bold" size="14.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="51.0" prefWidth="60.0" text="Seat no." textFill="WHITE">
+               <font>
+                  <Font name="Calisto MT Bold" size="14.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="53.0" prefWidth="94.0" text="Price" textFill="WHITE">
+               <font>
+                  <Font name="Calisto MT Bold" size="14.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="49.0" prefWidth="112.0" text="Date" textFill="WHITE">
+               <font>
+                  <Font name="Calisto MT Bold" size="14.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="42.0" prefWidth="71.0" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="Calisto MT Bold" size="14.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <ScrollPane fx:id="scrlpane" layoutX="-1.0" layoutY="120.0" prefHeight="378.0" prefWidth="650.0" />
+      <AnchorPane layoutX="-1.0" prefHeight="35.0" prefWidth="651.0" styleClass="backgroundColor">
+         <children>
+            <Label fx:id="startlbl" alignment="CENTER" prefHeight="62.0" prefWidth="651.0" styleClass="heading" stylesheets="@style.css" text="Cancellation" textFill="WHITE">
+               <font>
+                  <Font name="Calisto MT Bold" size="35.0" />
+               </font>
+            </Label>
+            <Circle fill="#ffffff00" layoutX="43.0" layoutY="33.0" radius="25.0" stroke="#fdfff9" strokeType="INSIDE" />
+            <ImageView blendMode="COLOR_BURN" fitHeight="58.0" fitWidth="58.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.02" contrast="0.67" hue="0.26" saturation="-0.45" />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="backbtn1" blendMode="DARKEN" fitHeight="42.0" fitWidth="50.0" layoutX="601.0" layoutY="4.0" onMouseClicked="#scenechange" onMouseEntered="#hover" onMouseExited="#hoverreverse" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back.jpg" />
+               </image>
+            </ImageView>
+          <AnchorPane layoutX="-8.0" layoutY="-31.0" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="651.0" />
+         </children>
+         <stylesheets>
+            <URL value="@style.css" />
+            <URL value="@styles.css" />
+         </stylesheets>
+      </AnchorPane>
+   </children>
+</AnchorPane>

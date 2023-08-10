@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="500.0" maxWidth="650.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="650.0" styleClass="backgroundColor" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <AnchorPane layoutX="141.0" layoutY="39.0" prefHeight="420.0" prefWidth="368.0" styleClass="backgroundBox" stylesheets="@../Desktop/New%20folder/style.css">
+         <children>
+            <Label layoutX="187.0" layoutY="359.0" onMouseClicked="#registerscene" styleClass="lblLink" stylesheets="@../Desktop/New%20folder/style.css" text="Register" textFill="#5c54de">
+               <font>
+                  <Font name="Californian FB" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="4.0" right="4.0" top="2.0" />
+               </padding>
+            </Label>
+            <Label layoutX="115.0" layoutY="356.0" prefHeight="24.0" prefWidth="71.0" text="New User?" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Fax Regular" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" blendMode="OVERLAY" layoutX="61.0" layoutY="186.0" prefHeight="26.0" prefWidth="249.0" promptText="Username" styleClass="txtField" stylesheets="@../Desktop/New%20folder/style.css">
+               <font>
+                  <Font name="Californian FB" size="12.0" />
+               </font></TextField>
+            <PasswordField fx:id="password" blendMode="OVERLAY" layoutX="62.0" layoutY="230.0" prefHeight="26.0" prefWidth="249.0" promptText="Password" styleClass="txtField" stylesheets="@../Desktop/New%20folder/style.css">
+               <font>
+                  <Font name="Californian FB" size="12.0" />
+               </font></PasswordField>
+            <Button fx:id="loginbtn" blendMode="COLOR_DODGE" layoutX="61.0" layoutY="316.0" mnemonicParsing="false" onAction="#loginbtn" prefHeight="26.0" prefWidth="249.0" styleClass="btnLogin" stylesheets="@../Desktop/New%20folder/style.css" text="Login" textFill="#400cfa">
+               <font>
+                  <Font name="Cambria" size="14.0" />
+               </font>
+            </Button>
+            <ImageView blendMode="COLOR_BURN" fitHeight="85.0" fitWidth="92.0" layoutX="144.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.02" contrast="-0.03" hue="0.26" saturation="-0.45" />
+               </effect>
+            </ImageView>
+            <Label layoutX="144.0" layoutY="128.0" prefHeight="30.0" prefWidth="86.0" style="-fx-font-weight: bold;" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Fax Regular" size="25.0" />
+               </font>
+            </Label>
+            <Circle fill="#ffffff00" layoutX="187.0" layoutY="73.0" radius="43.0" stroke="#fdfff9" strokeType="INSIDE" />
+            <Label fx:id="error" alignment="CENTER" layoutX="52.0" layoutY="288.0" prefHeight="17.0" prefWidth="268.0" textFill="#fd5353">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
